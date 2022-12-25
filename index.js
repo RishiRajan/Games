@@ -59,7 +59,7 @@ let cardBuilder = (response) =>{
         "tempCardBody" + j,
       );
       tempheading.innerHTML = response[i].title;
-      console.log(response[j].game_url);
+      
 
       tempPara = createElement("p", "card-text", 0, "tempCardBody" + j);
       tempPara.innerHTML = response[j].short_description;
@@ -67,6 +67,7 @@ let cardBuilder = (response) =>{
       tempButton = createElement("button","btn btn-lg btn-primary",0,"tempCardBody" + j);
       tempButton.innerHTML ="Checkout";
       tempButton.onclick = function (e) {
+        console.log(response[j].game_url);
         e.preventDefault();
         location.href = response[j].game_url;
       };
