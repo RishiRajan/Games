@@ -16,8 +16,6 @@ let fetchItems = async (url) => {
 // Main fetch
 fetchItems(url)
   .then((gameList) => {
-    //  console.log(JSON.stringify(gameList[0]),JSON.stringify(gameList[1]));
-    console.log("completed");
     cardBuilder(gameList);
   })
   .catch((error) => {
@@ -67,9 +65,8 @@ let cardBuilder = (response) =>{
       tempButton = createElement("button","btn btn-lg btn-primary","tempButton"+j,"tempCardBody" + j);
       tempButton.innerHTML ="Checkout";
       document.getElementById("tempButton" + j).onclick = function (e) {
-        console.log(response[j].game_url);
-        e.preventDefault();
-        location.href = "#";
+        // e.preventDefault();
+        location.href = response[j].game_url;
       };
 
       j += 1;
