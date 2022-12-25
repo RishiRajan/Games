@@ -69,7 +69,7 @@ let cardBuilder = (response) =>{
       document.getElementById("tempButton" + j).onclick = function (e) {
         console.log(response[j].game_url);
         e.preventDefault();
-        location.href = response[j].game_url;
+        location.href = "#";
       };
 
       j += 1;
