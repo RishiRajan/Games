@@ -48,10 +48,10 @@ let cardBuilder = (response) =>{
       tempImage.src = response[i].thumbnail;
 
       
-      createElement("div", "row g-0", "tempg" + j, "tempcard" + j);
+      // createElement("div", "row g-0", "tempg" + j, "tempcard" + j);
       
-      createElement("div", "col-md-8", "tempmd8" + j, "tempg" + j);
-      createElement("div", "card-body", "tempCardBody" + j, "tempmd8" + j);
+      // createElement("div", "col-md-8", "tempmd8" + j, "tempg" + j);
+      createElement("div", "card-body", "tempCardBody" + j, "tempcard" + j);
       let tempheading = createElement(
         "h5",
         "card-title",
