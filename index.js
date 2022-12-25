@@ -1,6 +1,6 @@
-// let url =
-  // "https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games"; //ink with cors added to avoid in dev phase
-let url = "https://www.freetogame.com/api/games";
+let url =
+  "https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games"; //ink with cors added to avoid in dev phase
+// let url = "https://www.freetogame.com/api/games";
 
 let fetchItems = async (url) => {
   const response = await fetch(url);
