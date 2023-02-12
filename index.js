@@ -1,5 +1,5 @@
 let url =
-  "https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games"; //ink with cors added to avoid in dev phase
+  "https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games"; //link with cors added to avoid in dev phase
 // let url = "https://www.freetogame.com/api/games";
 
 let fetchItems = async (url) => {
@@ -19,6 +19,7 @@ fetchItems(url)
     cardBuilder(gameList);
   })
   .catch((error) => {
+    window.alert("Whoops must be an Cors policy error check console.");
     console.log(error);
   });
 
